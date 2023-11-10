@@ -21,4 +21,4 @@ jobs:
     steps:
     # Runs a single command using the runners shell
     - name: Build
-      run: bash emkduke_miyoo.sh
+      run: bash mkduke_miyoo.sh
