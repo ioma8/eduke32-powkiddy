@@ -21,7 +21,7 @@ jobs:
     steps:
     - name: Install arm gcc
       run: |
-        sudo apt-get -y install gcc-arm-linux-gnueabihf
+        sudo apt-get -y install gcc-arm*
     - name: Check out the repository to the runner
       uses: actions/checkout@v4 
     - name: Build
