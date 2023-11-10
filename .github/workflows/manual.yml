@@ -19,8 +19,9 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
+    - name: Install arm gcc
+      uses: sudo apt-get install gcc-arm-linux-gnueabihf
     - name: Check out the repository to the runner
       uses: actions/checkout@v4 
-    # Runs a single command using the runners shell
     - name: Build
       run: bash mkduke_miyoo.sh
